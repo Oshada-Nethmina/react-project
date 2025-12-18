@@ -1,0 +1,16 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.icon{
+    border: none;
+    border-radius: 100%;
+}

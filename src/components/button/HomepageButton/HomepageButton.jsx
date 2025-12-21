@@ -5,7 +5,7 @@ export default function HomepageButton({ label,
     icon: Icon,
     iconPosition = "end",
     sx = {},
-    ...props }) {
+    onClick }) {
     return (
         <Button
             variant="contained"
@@ -21,7 +21,7 @@ export default function HomepageButton({ label,
                 },
                 ...sx,
             }}
-            {...props}
+            onClick={onClick}
         >
             {label}
         </Button>

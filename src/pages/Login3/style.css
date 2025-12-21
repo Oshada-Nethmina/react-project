@@ -5,3 +5,7 @@
   justify-content: space-between;
   height: 100vh;
 }
+.slider {
+  width: 200px !important;
+  margin-top: 40px;
+}

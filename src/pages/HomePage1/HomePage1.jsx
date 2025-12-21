@@ -7,8 +7,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { Box, Typography } from "@mui/material";
 import loadImage from '../../assets/1st Image.png';
 import HomepageButton from "../../components/button/HomepageButton/HomepageButton";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage1() {
+    const navigate = useNavigate();
     return (
         <>
             <div className="content">
@@ -24,6 +26,7 @@ export default function HomePage1() {
                             icon={ArrowForwardIcon}
                             iconPosition="end"
                             sx={{ mt: '30px' }}
+                            onClick={() => navigate("/Page-2")}
                         />
                     </div>
                     <div>
@@ -34,8 +37,6 @@ export default function HomePage1() {
 
                 <Footer />
             </div>
-
-
 
         </>
 

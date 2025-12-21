@@ -1,9 +1,10 @@
 import React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import Box from "@mui/material/Box";
 import logo from "../../assets/logo.png";
 
-export default function Header({homepageButton,navbarButton}) {
+export default function Header({homepageButton, navbarButton, progressBar}) {
     return (
         <AppBar
             position="sticky"
@@ -25,6 +26,11 @@ export default function Header({homepageButton,navbarButton}) {
                 }}
             >
                 <img src={logo} alt="" style={{ width: "200px", height: "auto" }} />
+                {progressBar && (
+                    <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
+                        {progressBar}
+                    </Box>
+                )}
                 {homepageButton}
                 {navbarButton}
             </Toolbar>

@@ -7,12 +7,14 @@ import { Box, Typography } from "@mui/material";
 import loadImage from "../../assets/2nd Image.png";
 import Header from "../../components/header/Header";
 import HomepageButton from "../../components/button/HomepageButton/HomepageButton";
+import { useNavigate } from "react-router-dom";
 
 export default function HomePage2() {
+    const navigate = useNavigate();
     return (
         <>
             <div className="content">
-                <Header navbarButton={<NavbarButton lable="Already have a account" />} />
+                <Header navbarButton={<NavbarButton label="Already have a account" />} />
                 <Box
                     sx={{
                         display: "flex",
@@ -38,6 +40,7 @@ export default function HomePage2() {
                             icon={ArrowForwardIcon}
                             iconPosition="end"
                             sx={{ mt: "30px" }}
+                            onClick={() => navigate('/page-3')}
                         />
                     </div>
                     <div>
